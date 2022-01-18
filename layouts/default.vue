@@ -148,7 +148,8 @@ p {
   text-align: justify;
 }
 h1,
-h2 {
+h2,
+h3 {
   color: #333;
   font-family: Fira Sans, sans-serif;
   font-weight: 400;
@@ -252,7 +253,7 @@ b {
 }
 
 .footer {
-  margin-top: 20px;
+  margin-top: 40px;
   height: 7.5rem;
   background-color: #272727;
   position: relative;

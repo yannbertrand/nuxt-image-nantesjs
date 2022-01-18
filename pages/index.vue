@@ -42,6 +42,15 @@
         </a>
       </div>
     </article>
+
+    <div class="full-width-container">
+      <div class="full-width-background"></div>
+      <div class="full-width-children">
+        <h3 class="full-width-title">Sponsors</h3>
+      </div>
+    </div>
+
+    <Sponsors />
   </div>
 </template>
 
@@ -160,5 +169,28 @@ export default {
 }
 .button + a {
   margin-left: 1rem;
+}
+
+.full-width-container {
+  height: 8rem;
+  margin: 2rem 0;
+}
+.full-width-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: inherit;
+  background-color: #d8d8d8;
+}
+.full-width-children {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.full-width-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 </style>
