@@ -147,6 +147,15 @@ p {
 p {
   text-align: justify;
 }
+h1,
+h2 {
+  color: #333;
+  font-family: Fira Sans, sans-serif;
+  font-weight: 400;
+}
+b {
+  font-weight: 700;
+}
 .layout {
   min-height: 100vh;
   width: 100%;
