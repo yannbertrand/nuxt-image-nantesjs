@@ -2,7 +2,7 @@
   <div style="outline: none">
     <section class="layout">
       <header class="header">
-        <div class="large-container" style="overflow: hidden">
+        <div class="header-large-container" style="overflow: hidden">
           <nav class="header-nav">
             <a
               aria-current="page"
@@ -56,7 +56,11 @@
         </div>
       </header>
 
-      <Nuxt />
+      <main class="main">
+        <div class="large-container">
+          <Nuxt />
+        </div>
+      </main>
 
       <footer class="footer">
         <a aria-current="page" class="footer-logo" href="https://nantesjs.org/">
@@ -156,7 +160,7 @@ p {
   height: 7.5rem;
   padding: 0 20px;
 }
-.large-container {
+.header-large-container {
   width: 1160px;
   margin: auto;
   max-width: 100%;
@@ -226,6 +230,16 @@ p {
   justify-content: center;
   margin: 0;
   padding: 0 10px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.large-container {
+  width: 1160px;
+  margin: auto;
+  max-width: 100%;
 }
 
 .footer {
