@@ -10,7 +10,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Montserrat:300',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -23,11 +29,18 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [],
+  buildModules: ['@nuxtjs/fontawesome'],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  fontawesome: {
+    icons: {
+      solid: ['faRssSquare', 'faHeart'],
+      brands: ['faTwitter', 'faSlack', 'faGithub', 'faYoutube', 'faTwitch'],
+    },
+  },
 }

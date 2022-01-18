@@ -1,55 +1,265 @@
 <template>
-  <div>
-    <Nuxt />
+  <div style="outline: none">
+    <section class="layout">
+      <header class="header">
+        <div class="large-container" style="overflow: hidden">
+          <nav class="header-nav">
+            <a
+              aria-current="page"
+              class="logo-link"
+              href="https://nantesjs.org/"
+            >
+              <Logo />
+            </a>
+            <div class="header-links">
+              <div class="social-icons">
+                <div class="social-icon">
+                  <a
+                    v-for="link of links"
+                    :key="link.label"
+                    class="social-icon-link"
+                    :href="link.href"
+                    :title="link.label"
+                  >
+                    <font-awesome-icon :icon="link.icon" class="fa-lg" />
+                  </a>
+                </div>
+              </div>
+              <div class="menu">
+                <div class="menu-content">
+                  <a
+                    aria-current="page"
+                    class="menu-link active"
+                    href="https://nantesjs.org/"
+                    >Evènements</a
+                  ><a
+                    class="menu-link"
+                    href="https://nantesjs.org/contributeurs/"
+                    >Contributeurs</a
+                  ><a
+                    class="menu-link"
+                    href="https://nantesjs.org/code-de-conduite/"
+                    >Code de conduite</a
+                  ><a class="menu-link" href="https://nantesjs.org/a-propos/"
+                    >A propos</a
+                  ><a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://conference-hall.io/public/event/DWIXMKeUnghfgJHerwEh"
+                    class="menu-button"
+                    >Proposer un sujet</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <Nuxt />
+
+      <footer class="footer">
+        <a aria-current="page" class="footer-logo" href="https://nantesjs.org/">
+          <Logo />
+        </a>
+        <p class="footer-copyright">
+          <font-awesome-icon icon="heart" /> &nbsp;
+          <a
+            aria-current="page"
+            class="footer-link"
+            href="https://nantesjs.org/"
+            >NantesJS</a
+          >&nbsp; - © 2011-2022
+          <a href="https://www.netlify.com" style="margin-left: 1rem">
+            <img
+              src="https://www.netlify.com/img/global/badges/netlify-light.svg"
+              alt="Deploys by Netlify"
+            />
+          </a>
+        </p>
+      </footer>
+    </section>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      links: [
+        {
+          href: 'https://join.slack.com/t/nantesjs/shared_invite/enQtNTM0MjA0NTE0NTkzLTc3YWRkMjk3MTg3ZjEwYzVhYTA1YTA1OGE3MTdkMGE2ZjgzNzE1YzMwYWQwYmU0ZTEzNDhkZWUwZGY2ZjQ5OWY',
+          label: 'Slack',
+          icon: ['fab', 'slack'],
+        },
+        {
+          href: 'https://twitter.com/NantesJS',
+          label: 'Twitter',
+          icon: ['fab', 'twitter'],
+        },
+        {
+          href: 'https://github.com/yannbertrand/nuxt-image-nantesjs',
+          label: 'Github',
+          icon: ['fab', 'github'],
+        },
+        {
+          href: 'https://nantesjs.org/rss.xml',
+          label: 'RSS',
+          icon: 'rss-square',
+        },
+        {
+          href: 'https://www.youtube.com/c/NantesJS',
+          label: 'YouTube',
+          icon: ['fab', 'youtube'],
+        },
+        {
+          href: 'https://twitch.tv/nantesjs',
+          label: 'Twitch',
+          icon: ['fab', 'twitch'],
+        },
+      ],
+    }
+  },
+}
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  background-color: #f1f1f1;
   margin: 0;
+  padding: 0;
+}
+* {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  box-sizing: border-box;
+}
+a,
+a:visited,
+p {
+  color: #444;
+}
+p {
+  text-align: justify;
+}
+.layout {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  height: 7.5rem;
+  padding: 0 20px;
+}
+.large-container {
+  width: 1160px;
+  margin: auto;
+  max-width: 100%;
+}
+.header-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-link {
+  display: flex;
+}
+.logo-link .logo {
+  max-height: 6.5rem;
+  margin: auto;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+.header-links {
+  display: flex;
+  flex-direction: column;
+}
+.social-icons {
+  margin-bottom: 10px;
+}
+.social-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-icon-link:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icon-link {
+  color: #f3e049 !important;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #333;
+  border-radius: 1000px;
+}
+.menu-content {
+  align-items: center;
+  display: flex;
+}
+.menu-link {
+  color: #f3e049 !important;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2em;
   text-decoration: none;
-  padding: 10px 30px;
+  border-bottom: 3px solid #333;
+  margin-right: 20px;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.menu-link.active {
+  border-bottom: 3px solid #f3e049;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+.menu-button {
+  align-items: center;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  background-color: #f3e049;
+  border: 0;
+  color: #333;
+  display: flex;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  height: 40px;
+  justify-content: center;
+  margin: 0;
+  padding: 0 10px;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.footer {
+  margin-top: 20px;
+  height: 7.5rem;
+  background-color: #272727;
+  position: relative;
+}
+.footer-logo {
+  border-radius: 75px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: #272727;
+  overflow: hidden;
+  position: absolute;
+  right: 40px;
+  top: -45px;
+  display: flex;
+}
+.footer-logo .logo {
+  max-height: 75px;
+  width: 100%;
+  margin: auto;
+}
+.footer-copyright {
+  color: #f3e049 !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+}
+.footer-link {
+  color: #f3e049 !important;
 }
 </style>
