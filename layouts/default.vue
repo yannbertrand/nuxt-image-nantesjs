@@ -1,14 +1,14 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Use `<nuxt-img />` + width & height sponsors"
-      :stepNb="4"
-      :transferedNow="408"
-      :resourcesNow="690"
-      :transferedBefore="534"
-      :resourcesBefore="817"
-      previousLink="https://step-3--nuxt-image-nantesjs.netlify.app/"
-      nextLink="https://step-5--nuxt-image-nantesjs.netlify.app/"
+      title="Use `this.$img` for element background URL"
+      :stepNb="5"
+      :transferedNow="413"
+      :resourcesNow="697"
+      :transferedBefore="408"
+      :resourcesBefore="690"
+      previousLink="https://step-4--nuxt-image-nantesjs.netlify.app/"
+      nextLink="https://step-6--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
