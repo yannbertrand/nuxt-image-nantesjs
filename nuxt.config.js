@@ -48,6 +48,9 @@ export default {
   },
 
   image: {
-    domains: ['pbs.twimg.com']
+    domains: ['pbs.twimg.com'],
+    imagekit: {
+      baseURL: `https://ik.imagekit.io/${process.env.IMAGEKIT_ID}`,
+    },
   }
 }
