@@ -40,7 +40,10 @@ export default {
   },
   computed: {
     speakerAvatarBackgroundStyles() {
-      const imgUrl = this.avatar
+      const imgUrl = this.$img(this.avatar, {
+        width: 104,
+        height: 104,
+      })
       return {
         backgroundImage: `url('${imgUrl}')`,
       }

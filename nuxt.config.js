@@ -46,4 +46,8 @@ export default {
       brands: ['faTwitter', 'faSlack', 'faGithub', 'faYoutube', 'faTwitch'],
     },
   },
+
+  image: {
+    domains: ['pbs.twimg.com']
+  }
 }
