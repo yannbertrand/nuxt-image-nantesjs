@@ -1,7 +1,7 @@
 <template>
   <img
     class="logo"
-    src="/nantesjs.png"
+    src="/nantesjs.svg"
     :width="width"
     :height="height"
     alt="Logo NantesJS"
