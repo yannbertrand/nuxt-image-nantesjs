@@ -1,40 +1,76 @@
 <template>
   <div class="sponsors">
     <a class="sponsor" href="https://unirakun.fr/">
-      <img
+      <nuxt-img
         alt="unirakun"
         class="sponsor-logo-img"
         src="/sponsor/big_unirakun.png"
+        width="156"
+        height="130"
       />
     </a>
     <a class="sponsor" href="https://seyos.fr/">
-      <img alt="seyos" class="sponsor-logo-img" src="/sponsor/seyos.png" />
+      <nuxt-img
+        alt="seyos"
+        class="sponsor-logo-img"
+        src="/sponsor/seyos.png"
+        width="156"
+        height="68"
+      />
     </a>
     <a class="sponsor" href="https://nantes.zenika.com/#/">
-      <img alt="zenika" class="sponsor-logo-img" src="/sponsor/zenika.png" />
+      <nuxt-img
+        alt="zenika"
+        class="sponsor-logo-img"
+        src="/sponsor/zenika.png"
+        width="156"
+        height="48"
+      />
     </a>
     <a class="sponsor" href="https://www.oxiane.bzh/">
-      <img alt="oxiane" class="sponsor-logo-img" src="/sponsor/oxiane.png" />
+      <nuxt-img
+        alt="oxiane"
+        class="sponsor-logo-img"
+        src="/sponsor/oxiane.png"
+        width="280"
+        height="120"
+      />
     </a>
     <a class="sponsor" href="https://www.externatic.fr/">
-      <img
+      <nuxt-img
         alt="externatic"
         class="sponsor-logo-img"
         src="/sponsor/externatic.png"
+        width="156"
+        height="85"
       />
     </a>
     <a class="sponsor" href="https://www.sfeir.com/">
-      <img alt="sfeir" class="sponsor-logo-img" src="/sponsor/sfeir.png" />
+      <nuxt-img
+        alt="sfeir"
+        class="sponsor-logo-img"
+        src="/sponsor/sfeir.png"
+        width="156"
+        height="52"
+      />
     </a>
     <a class="sponsor" href="https://eleven-labs.com/">
-      <img
+      <nuxt-img
         alt="eleven labs"
         class="sponsor-logo-img"
         src="/sponsor/eleven-labs.png"
+        width="156"
+        height="106"
       />
     </a>
     <a class="sponsor" href="https://www.lucca.fr/">
-      <img alt="lucca" class="sponsor-logo-img" src="/sponsor/logo-lucca.svg" />
+      <nuxt-img
+        alt="lucca"
+        class="sponsor-logo-img"
+        src="/sponsor/logo-lucca.svg"
+        width="156"
+        height="55"
+      />
     </a>
   </div>
 </template>
