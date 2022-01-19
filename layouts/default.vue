@@ -1,14 +1,14 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Use the `webp` format instead of `png`"
-      :stepNb="6"
-      :transferedNow="357"
-      :resourcesNow="640"
-      :transferedBefore="413"
-      :resourcesBefore="697"
-      previousLink="https://step-5--nuxt-image-nantesjs.netlify.app/"
-      nextLink="https://step-7--nuxt-image-nantesjs.netlify.app/"
+      title="Optimize external images"
+      :stepNb="7"
+      :transferedNow="244"
+      :resourcesNow="529"
+      :transferedBefore="357"
+      :resourcesBefore="640"
+      previousLink="https://step-6--nuxt-image-nantesjs.netlify.app/"
+      nextLink="https://step-8--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
