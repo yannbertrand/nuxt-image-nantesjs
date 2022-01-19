@@ -19,7 +19,7 @@
               class="logo-link"
               href="https://nantesjs.org/"
             >
-              <Logo />
+              <Logo :width="104" :height="104" />
             </a>
             <div class="header-links">
               <div class="social-icons">
@@ -74,7 +74,7 @@
 
       <footer class="footer">
         <a aria-current="page" class="footer-logo" href="https://nantesjs.org/">
-          <Logo />
+          <Logo :width="60" :height="60" />
         </a>
         <p class="footer-copyright">
           <font-awesome-icon icon="heart" /> &nbsp;
