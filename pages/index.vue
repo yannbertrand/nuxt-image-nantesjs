@@ -194,6 +194,7 @@ export default {
   right: 0;
   height: inherit;
   background-color: #d8d8d8;
+  z-index: 0;
 }
 .full-width-children {
   position: relative;

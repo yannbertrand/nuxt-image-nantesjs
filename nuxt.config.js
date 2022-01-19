@@ -14,7 +14,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Montserrat:300,600,700',
+        href: 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Montserrat:300,500,600,700',
       },
     ],
   },
