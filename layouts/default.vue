@@ -1,14 +1,14 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Use `this.$img` for element background URL"
-      :stepNb="5"
-      :transferedNow="413"
-      :resourcesNow="697"
-      :transferedBefore="408"
-      :resourcesBefore="690"
-      previousLink="https://step-4--nuxt-image-nantesjs.netlify.app/"
-      nextLink="https://step-6--nuxt-image-nantesjs.netlify.app/"
+      title="Use the `webp` format instead of `png`"
+      :stepNb="6"
+      :transferedNow="357"
+      :resourcesNow="640"
+      :transferedBefore="413"
+      :resourcesBefore="697"
+      previousLink="https://step-5--nuxt-image-nantesjs.netlify.app/"
+      nextLink="https://step-7--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
