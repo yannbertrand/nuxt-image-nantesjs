@@ -1,14 +1,14 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Add NantesJS width & height attributes"
-      :stepNb="2"
-      :transferedNow="530"
-      :resourcesNow="798"
+      title="Install @nuxt/image"
+      :stepNb="3"
+      :transferedNow="534"
+      :resourcesNow="817"
       :transferedBefore="530"
       :resourcesBefore="798"
-      previousLink="https://step-1--nuxt-image-nantesjs.netlify.app/"
-      nextLink="https://step-3--nuxt-image-nantesjs.netlify.app/"
+      previousLink="https://step-2--nuxt-image-nantesjs.netlify.app/"
+      nextLink="https://step-4--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
