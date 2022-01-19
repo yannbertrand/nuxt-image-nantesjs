@@ -167,8 +167,7 @@ b {
   align-items: center;
   background-color: #333;
   display: flex;
-  height: 7.5rem;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .header-large-container {
   width: 1160px;
