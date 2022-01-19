@@ -7,6 +7,7 @@
         src="/sponsor/big_unirakun.png"
         width="156"
         height="130"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://seyos.fr/">
@@ -16,6 +17,7 @@
         src="/sponsor/seyos.png"
         width="156"
         height="68"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://nantes.zenika.com/#/">
@@ -25,6 +27,7 @@
         src="/sponsor/zenika.png"
         width="156"
         height="48"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://www.oxiane.bzh/">
@@ -34,6 +37,7 @@
         src="/sponsor/oxiane.png"
         width="280"
         height="120"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://www.externatic.fr/">
@@ -43,6 +47,7 @@
         src="/sponsor/externatic.png"
         width="156"
         height="85"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://www.sfeir.com/">
@@ -52,6 +57,7 @@
         src="/sponsor/sfeir.png"
         width="156"
         height="52"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://eleven-labs.com/">
@@ -61,6 +67,7 @@
         src="/sponsor/eleven-labs.png"
         width="156"
         height="106"
+        format="webp"
       />
     </a>
     <a class="sponsor" href="https://www.lucca.fr/">

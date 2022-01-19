@@ -79,7 +79,11 @@ export default {
   },
   computed: {
     nuxtBackgroundStyles() {
-      const imgUrl = this.$img('/meetup/nuxt.png', { width: 176, height: 176 })
+      const imgUrl = this.$img('/meetup/nuxt.png', {
+        width: 176,
+        height: 176,
+        format: 'webp',
+      })
       return {
         backgroundImage: `url('${imgUrl}')`,
       }
