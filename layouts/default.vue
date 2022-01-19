@@ -1,11 +1,14 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Aucune optimisation"
-      :stepNb="0"
-      :transferedNow="568"
-      :resourcesNow="833"
-      nextLink="https://step-1--nuxt-image-nantesjs.netlify.app/"
+      title="PNG => SVG"
+      :stepNb="1"
+      :transferedNow="530"
+      :resourcesNow="798"
+      :transferedBefore="568"
+      :resourcesBefore="833"
+      previousLink="https://main--nuxt-image-nantesjs.netlify.app/"
+      nextLink="https://step-2--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
