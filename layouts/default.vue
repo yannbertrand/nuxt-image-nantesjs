@@ -1,14 +1,14 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Install @nuxt/image"
-      :stepNb="3"
-      :transferedNow="534"
-      :resourcesNow="817"
-      :transferedBefore="530"
-      :resourcesBefore="798"
-      previousLink="https://step-2--nuxt-image-nantesjs.netlify.app/"
-      nextLink="https://step-4--nuxt-image-nantesjs.netlify.app/"
+      title="Use `<nuxt-img />` + width & height sponsors"
+      :stepNb="4"
+      :transferedNow="408"
+      :resourcesNow="690"
+      :transferedBefore="534"
+      :resourcesBefore="817"
+      previousLink="https://step-3--nuxt-image-nantesjs.netlify.app/"
+      nextLink="https://step-5--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
