@@ -1,10 +1,7 @@
 <template>
   <div class="talk">
     <div class="avatars">
-      <div
-        class="avatar"
-        :style="`background-image: url(https://avatars.charlyx.dev/twitter?username=${twitter}&amp;size=original);`"
-      ></div>
+      <div class="avatar" :style="speakerAvatarBackgroundStyles"></div>
     </div>
     <div>
       <h2 class="talk-title">
@@ -35,6 +32,18 @@ export default {
     twitter: {
       type: String,
       required: true,
+    },
+    avatar: {
+      type: String,
+      required: true,
+    },
+  },
+  computed: {
+    speakerAvatarBackgroundStyles() {
+      const imgUrl = this.avatar
+      return {
+        backgroundImage: `url('${imgUrl}')`,
+      }
     },
   },
 }
