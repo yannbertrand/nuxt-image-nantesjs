@@ -1,14 +1,13 @@
 <template>
   <div style="outline: none">
     <Tooltip
-      title="Add `radius` on avatars using another provider"
-      :stepNb="8"
+      title="Conclusion"
+      :stepNb="9"
       :transferedNow="247"
       :resourcesNow="531"
-      :transferedBefore="244"
-      :resourcesBefore="529"
-      previousLink="https://step-7--nuxt-image-nantesjs.netlify.app/"
-      nextLink="https://conclusion--nuxt-image-nantesjs.netlify.app/"
+      :transferedBefore="569"
+      :resourcesBefore="833"
+      previousLink="https://step-8--nuxt-image-nantesjs.netlify.app/"
     />
     <section class="layout">
       <header class="header">
